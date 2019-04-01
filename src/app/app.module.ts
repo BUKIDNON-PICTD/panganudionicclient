@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SocketIoModule, SocketIoConfig } from 'ng-socket-io';
 
-const config: SocketIoConfig = { url: 'https://tagabukid-panganud-aguilarufino.c9users.io:8080', options: {} };
+const config: SocketIoConfig = { url: 'http://122.54.200.110:9000', options: {} };
 
 @NgModule({
   declarations: [AppComponent],
