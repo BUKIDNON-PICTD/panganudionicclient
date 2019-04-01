@@ -1,5 +1,7 @@
 {
   "name": "panganudclient",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

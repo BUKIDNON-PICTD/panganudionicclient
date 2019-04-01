@@ -7,8 +7,23 @@
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <div class="col-lg-3 col-xs-6 but" *ngFor="let item of items">
+    <div
+      class="small-box bg-{{
+        item.setting.color ? item.setting.color : 'red'
+      }}"
+    >
+      <div class="inner">
+        <h3>{{ item.data.COUNT }}</h3>
+        <p>{{ item.name }}</p>
+      </div>
+      <div class="icon">
+        <i
+          class="ion ion-{{
+            item.setting.icon ? item.setting.icon : 'stat-bars'
+          }}"
+        ></i>
+      </div>
+    </div>
   </div>
 </ion-content>
