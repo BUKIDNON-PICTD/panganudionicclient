@@ -15,7 +15,7 @@ export class HomePage implements OnInit {
           x.setting = JSON.parse(x.setting);
         }
       });
-      console.log(data[0].code);
+      // console.log(data[0].code);
       this.items = data;
     });
   }
